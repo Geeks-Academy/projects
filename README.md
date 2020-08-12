@@ -10,7 +10,6 @@
 -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
@@ -46,6 +45,9 @@
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
+  * [Running](#running)
+  * [Testing](#testing)
+  * [API](#api)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -91,10 +93,11 @@ npm install
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Run
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### Test
 
+### API
 
 
 <!-- ROADMAP -->
@@ -129,14 +132,19 @@ Localhost - contact@localhost-group.com
 Project Link: [https://github.com/Programmers-Only-Group/projects](https://github.com/Programmers-Only-Group/projects)
 
 
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+
+* []()
+* []()
+* []()
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
 [contributors-url]: https://github.com/Programmers-Only-Group/projects/issues
 [forks-shield]: http://inch-ci.org/github/Programmers-Only-Group/projects.svg?branch=master&style=shields
 [forks-url]: http://inch-ci.org/github/Programmers-Only-Group/projects
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat
-[stars-url]: https://github.com/Programmers-Only-Group/projects/issues
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat
 [issues-url]: https://github.com/Programmers-Only-Group/projects/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat
