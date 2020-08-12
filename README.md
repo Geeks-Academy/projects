@@ -129,8 +129,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Localhost - contact@localhost-group.com
-Project Link: [https://github.com/Programmers-Only-Group/projects](https://github.com/Programmers-Only-Group/projects)
-
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
