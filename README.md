@@ -1,19 +1,3 @@
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username, repo, twitter_handle, email
--->
-
-
-
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -21,14 +5,14 @@
 *** See the bottom of this document for the declaration of the reference variables
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
+*** 
+*** TODO PSTA: ADD MORE DYNAMIC SHIELDS THAT MAKES SENSE
 -->
-<p align="center">
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-</p>
 
 
 <!-- PROJECT LOGO -->
@@ -41,19 +25,16 @@
   <h3 align="center">Projects</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    Programmers Only app module. Microservice for users projects managing, editing and storing.
     <br />
-    <a href="https://github.com/Programmers-Only-Group/projects"><strong>Explore the docs »</strong></a>
+    <a href="#"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Programmers-Only-Group/projects">View Demo</a>
-    ·
     <a href="https://github.com/Programmers-Only-Group/projects/issues">Report Bug</a>
     ·
     <a href="https://github.com/Programmers-Only-Group/projects/issues">Request Feature</a>
   </p>
 </p>
-
 
 
 <!-- TABLE OF CONTENTS -->
@@ -72,23 +53,14 @@
 * [Acknowledgements](#acknowledgements)
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo`, `twitter_handle`, `email`
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
 ### Built With
 
-* []()
-* []()
-* []()
-
+* [node.js](https://nodejs.org/dist/v12.18.3/)
 
 
 <!-- GETTING STARTED -->
@@ -116,7 +88,6 @@ npm install
 ```
 
 
-
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -136,9 +107,7 @@ See the [open issues](https://github.com/Programmers-Only-Group/projects/issues)
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
+1. Clone the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
@@ -156,20 +125,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
-
+Localhost - contact@localhost-group.com
 Project Link: [https://github.com/Programmers-Only-Group/projects](https://github.com/Programmers-Only-Group/projects)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
