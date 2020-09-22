@@ -18,7 +18,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Programmers-Only-Group/projects">
-    <img src="images/localhost_logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Projects</h3>
