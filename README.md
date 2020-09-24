@@ -93,10 +93,19 @@ npm install
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+### Build
+```sh
+npm run build
+```
+
 ### Run
-
+```sh
+npm run start
+```
 ### Test
-
+```sh
+npm run test
+```
 ### API
 
 
