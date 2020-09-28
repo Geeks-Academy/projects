@@ -153,7 +153,7 @@ Distributed under the GPL-3.0 License.
 <!-- CONTACT -->
 ## Contact
 
-Localhost - contact@localhost-group.com
+contact@localhost-group.com
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
