@@ -9,7 +9,6 @@
 *** TODO PSTA: ADD MORE DYNAMIC SHIELDS THAT MAKES SENSE
 -->
 [![Contributors][contributors-shield]][contributors-url]
-[![MIT License][license-shield]][license-url]
 
 
 <!-- PROJECT LOGO -->
