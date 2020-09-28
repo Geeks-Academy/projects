@@ -9,8 +9,6 @@
 *** TODO PSTA: ADD MORE DYNAMIC SHIELDS THAT MAKES SENSE
 -->
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
 
@@ -165,7 +163,7 @@ contact@localhost-group.com
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
-[contributors-url]: https://github.com/Programmers-Only-Group/projects/issues
+[contributors-url]: https://github.com/Programmers-Only-Group/projects#contributing
 [forks-shield]: http://inch-ci.org/github/Programmers-Only-Group/projects.svg?branch=master&style=shields
 [forks-url]: http://inch-ci.org/github/Programmers-Only-Group/projects
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat
