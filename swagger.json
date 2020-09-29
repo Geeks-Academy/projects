@@ -1,0 +1,304 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "projects",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "https://host/v1"
+    }
+  ],
+  "paths": {
+    "/user/{userId}/project": {
+      "get": {
+        "summary": "Returns list of projects that belongs to the user.",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "description": "description",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "content": {}
+          },
+          "400": {
+            "description": "Parameter is invalid.",
+            "content": {}
+          },
+          "404": {
+            "description": "Cannot find collection of user projects.",
+            "content": {}
+          }
+        }
+      },
+      "put": {
+        "summary": "Updates existing project of the user.",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "description": "description",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Project that needs to be added",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Project"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/Project"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Project has been updated",
+            "content": {}
+          },
+          "201": {
+            "description": "Project has been created. It should also return ID of created resource or the path. Can be described here when openapi 3.0 is used.",
+            "content": {}
+          },
+          "400": {
+            "description": "Validation exception with error messages",
+            "content": {}
+          },
+          "404": {
+            "description": "User not found.",
+            "content": {}
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      },
+      "post": {
+        "summary": "Adds new project to user.",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "description": "description",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Project object that needs to be added.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Project"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/Project"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Successfuly created. It should also return ID of created resource or the path. Can be described here when openapi 3.0 is used.",
+            "content": {}
+          },
+          "400": {
+            "description": "Validation exception with error messages",
+            "content": {}
+          },
+          "404": {
+            "description": "User not found.",
+            "content": {}
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/user/{userId}/project/{projectId}": {
+      "get": {
+        "summary": "Used to get project from user portfolio by user id and project id.",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "projectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {}
+          },
+          "400": {
+            "description": "Invalid id/ids supplied.",
+            "content": {}
+          },
+          "404": {
+            "description": "Project or user cannot not be found.",
+            "content": {}
+          }
+        }
+      },
+      "delete": {
+        "summary": "Removes project from user portfolio by user id and project id.",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "projectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {}
+          },
+          "400": {
+            "description": "Invalid id/ids supplied.",
+            "content": {}
+          },
+          "404": {
+            "description": "Project or user cannot not be found.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/user/{userId}/synchronize": {
+      "get": {
+        "summary": "Synchronizes user project list with repository.",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "",
+            "content": {}
+          },
+          "400": {
+            "description": "Invalid id supplied.",
+            "content": {}
+          },
+          "404": {
+            "description": "User cannot not be found.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/user/{userId}/follow/{projectId}": {
+      "get": {
+        "summary": "Follow other user project.",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "projectId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "",
+            "content": {}
+          },
+          "400": {
+            "description": "Invalid id/ids supplied.",
+            "content": {}
+          },
+          "404": {
+            "description": "User or project cannot not be found.",
+            "content": {}
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Project": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer"
+          },
+          "projectId": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "repositoryPath": {
+            "type": "string",
+            "description": "URL to repository"
+          },
+          "description": {
+            "type": "string"
+          },
+          "isLookingForContributors": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}
