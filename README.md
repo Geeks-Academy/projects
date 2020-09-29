@@ -9,9 +9,6 @@
 *** TODO PSTA: ADD MORE DYNAMIC SHIELDS THAT MAKES SENSE
 -->
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 
 
 <!-- PROJECT LOGO -->
@@ -45,8 +42,8 @@
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
-  * [Running](#running)
-  * [Testing](#testing)
+  * [Running](#run)
+  * [Testing](#test)
   * [API](#api)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
@@ -58,21 +55,25 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+This microservice is a part of a bigger project - ProgrammersOnlyApp. Our project’s sole purpose is to connect people like you - creative github users. Users with too many ideas and not enough people to execute them. Users with a need for open-source contributions. If you are a programmer, this is a place for you. 
 
+On the other hand, this microservice is for storing your projects, ideas and everything that is connected to that. That way people you are looking for will be able to find you themselves!
+    
 ### Built With
 
 * [node.js](https://nodejs.org/dist/v12.18.3/)
+* [nest.js](https://docs.nestjs.com/)
+* [mongoDB](https://www.mongodb.com/try/download/compass?tck=docs_compass)
 
+### Handled with
+
+* [Vivify](https://www.vivifyscrum.com/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * npm
 ```sh
 npm install npm@latest -g
@@ -112,6 +113,27 @@ npm run test
 <!-- ROADMAP -->
 ## Roadmap
 
+### Phase 1 - Base Setup:
+* Base test setup
+* Base backend setup
+* Base db structure
+* Add, Edit and Remove project from portfolio
+* Synchronize projects list with GitHub
+
+### Phase 2 - Visualization:
+* Get project, Get list of projects
+* Base UI mockups
+* Mark project as open for contributions
+
+### Phase 3 - Rating:
+* Synchronize projects follows with GitHub
+* Allow other users to follow other project
+* Add, Edit, Remove list of followed projects
+
+### Phase 4 - Feed:
+* Generate lists of most popular projects
+* Generate lists of latest projects followed by user that received contribution
+
 See the [open issues](https://github.com/Programmers-Only-Group/projects/issues) for a list of proposed features (and known issues).
 
 
@@ -130,26 +152,26 @@ See the [open issues](https://github.com/Programmers-Only-Group/projects/issues)
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the GPL-3.0 License.
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Localhost - contact@localhost-group.com
+contact@localhost-group.com
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+* [Cisowianka62](https://github.com/cisowianka62)
+* [Kyziur](https://github.com/kyziur)
+* [Piotr Grzybowski](https://github.com/Piotr-Grzybowski)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
-[contributors-url]: https://github.com/Programmers-Only-Group/projects/issues
+[contributors-url]: https://github.com/Programmers-Only-Group/projects#contributing
 [forks-shield]: http://inch-ci.org/github/Programmers-Only-Group/projects.svg?branch=master&style=shields
 [forks-url]: http://inch-ci.org/github/Programmers-Only-Group/projects
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat
