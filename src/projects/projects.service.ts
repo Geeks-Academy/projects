@@ -40,7 +40,7 @@ export class ProjectsService {
     project.projects.push(...newProject);
     return project;
   }
-
+  // Update one of user's project where _id equal to projectId
   async update(userId, projectId: number, createProjectDto: CreateProjectDto): Promise<Projects> {
     const updatedProject = await this.projectsModel
       .findOne({ userId: userId })
@@ -57,7 +57,7 @@ export class ProjectsService {
   }
 
   // Delete project with _id equals to projectId
-  async remove(userId: number, projectId: number): Promise<any> {
+  async removeProject(userId: number, projectId: number): Promise<any> {
     const deletedProject = await this.projectsModel
       .findOne({ userId: userId })
       .exec();
@@ -65,5 +65,12 @@ export class ProjectsService {
     deletedProject.projects.splice(indexOfDeleted, 1);
     await deletedProject.save();
     return deletedProject;
+  }
+  // Delete whole record
+  async remove(userId: number): Promise<any> {
+    const deletedUser = await this.projectsModel
+      .findOneAndDelete({ userId: userId })
+      .exec();
+    return deletedUser;
   }
 }

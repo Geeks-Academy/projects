@@ -36,6 +36,6 @@ export class ProjectsController {
 
   @Delete(':id')
   remove(@Param('id') id: number, @Body('userId') userId: number) {
-    return this.projectsService.remove(userId, +id);
+    return this.projectsService.removeProject(userId, +id);
   }
 }
