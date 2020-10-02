@@ -1,4 +1,6 @@
-export class CreateProjectDto {
+import { Document } from 'mongoose';
+
+export interface Projects extends Document {
   readonly userId: number;
   readonly projects: [
     {
