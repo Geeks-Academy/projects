@@ -5,5 +5,7 @@ export const ProjectSchema = new mongoose.Schema({
       name: String,
       description: String,
       url: String,
-      isLookingForContributors: Boolean
+      isLookingForContributors: Boolean,
+      creator: Number,
+      contributors: [Number]
     }, { _id: false });
