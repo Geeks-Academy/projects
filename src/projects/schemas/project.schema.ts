@@ -6,6 +6,6 @@ export const ProjectSchema = new mongoose.Schema({
       description: String,
       url: String,
       isLookingForContributors: Boolean,
-      creator: Number,
-      contributors: [Number]
+      creator: {type: mongoose.Schema.Types.Number, ref: 'User'},
+      contributors: [{type: mongoose.Schema.Types.Number, ref: 'User'}]
     }, { _id: false });
