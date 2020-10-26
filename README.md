@@ -89,7 +89,9 @@ git clone https://github.com/Programmers-Only-Group/projects.git
 ```sh
 npm install
 ```
-
+3. Setup database
+App requires mongodb to run. Open file '.env.example' and add variable 'MONGODB_URL' with your database address. After that rename file to '.env'.
+If you don't have it installed yet check this [address] (https://docs.mongodb.com/manual/installation/). 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
