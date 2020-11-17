@@ -10,33 +10,71 @@ import {
 import { ProjectsService } from './projects.service';
 import { CreateProjectDto } from './dto/create-project.dto';
 import { UpdateProjectDto } from './dto/update-project.dto';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('projects')
 export class ProjectsController {
   constructor(private readonly projectsService: ProjectsService) {}
-
-  @Post()
-  create(@Body() createProjectDto: CreateProjectDto) {
-    return this.projectsService.create(createProjectDto);
+  @ApiTags('Projects')
+  @Get(':userId/all')
+  getAllProjects(@Param('userId') userId: string) {
+    return this.projectsService.findAllProjects(userId);
   }
 
-  @Get()
-  findAll() {
-    return this.projectsService.findAll();
+  @ApiTags('Projects')
+  @Get(':userId/creator')
+  getAllProjectsByCreator(@Param('userId') userId: string) {
+    return this.projectsService.findAllProjectsByCreator(userId);
   }
 
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.projectsService.findOne(+id);
+  @ApiTags('Projects')
+  @Get(':userId/contributes')
+  getAllProjectsByContributes(@Param('userId') userId: string) {
+    return this.projectsService.findAllProjectsByContributions(userId);
   }
 
-  @Put(':id')
-  update(@Param('id') id: string, @Body() updateProjectDto: UpdateProjectDto) {
-    return this.projectsService.update(+id, updateProjectDto);
+  @ApiTags('Projects')
+  @Get(':projectId')
+  getOneProjectById(@Param('projectId') projectId: string) {
+    return this.projectsService.findOneProjectById(projectId);
   }
 
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.projectsService.remove(+id);
+  @ApiTags('Projects')
+  @Post('create')
+  createProject(@Body() data: CreateProjectDto) {
+    return this.projectsService.createProject(data);
+  }
+
+  @ApiTags('Projects')
+  @Put(':project/update')
+  updateProject(
+    @Param('projectId') projectId: string,
+    @Body() data: UpdateProjectDto,
+  ) {
+    return this.projectsService.updateProject(projectId, data);
+  }
+
+  @ApiTags('Projects')
+  @Delete(':projectId/delete')
+  deleteProject(@Param('projectId') projectId: string) {
+    return this.projectsService.removeProject(projectId);
+  }
+
+  @ApiTags('Contributions')
+  @Get(':userId/join/:projectId')
+  joinToProjectContribution(
+    @Param('userId') userId: string,
+    @Param('projectId') projectId: string,
+  ) {
+    return this.projectsService.joinToProjectContribution(projectId, userId);
+  }
+
+  @ApiTags('Contributions')
+  @Get(':userId/leave/:projectId')
+  leaveFromProjectContribution(
+    @Param('userId') userId: string,
+    @Param('projectId') projectId: string,
+  ) {
+    return this.projectsService.leaveFromProjectContribution(projectId, userId);
   }
 }
