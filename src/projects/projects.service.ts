@@ -71,10 +71,10 @@ export class ProjectsService {
   }
 
   updateProject(id: string, data: UpdateProjectDto) {
-    return this.project.findOneAndUpdate({ _id: id }, data);
+    return this.project.update({ _id: id }, data);
   }
 
   removeProject(id: string) {
-    return this.project.findOneAndDelete({ _id: id });
+    return this.project.deleteOne({ _id: id });
   }
 }
